@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key="></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color:navy;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: navy;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Weather Dashboard for Travlers</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+        <div id="w3docs-map" style="width:200px;height:420px;"></div>
+    </div>
+    <script>
+    
+    </script>
+    <div class="col-sm-8 text-left"> 
+      <h1>Seven Day Forecast</h1>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/38d91n77d03/district-of-columbia/" data-label_1="WASHINGTON, D.C." data-label_2="WEATHER" data-theme="original" >WASHINGTON, D.C. WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+      <hr>
+      <h3>Current Weather Conditions</h3>
+      <p>Current weather condidions go here (placeholder)</p>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>Travel Tips </p>
+        <p>
+          <ul>
+            <li>Bring wallet</li>
+            <li>Bring cellphone</li>
+            <li>Pack Light</li>
+            <li>Have Fun!</li>
+          </ul>
+        </p>
+      </div>
+      <div class="well">
+        <p>Links to Travel Websites</p>
+        <p>
+          <ul>
+            <li> <a href="https://www.booking.com/">Booking</a></li>
+            <li> <a href="https://www.priceline.com/">Priceline</a></li>
+            <li> <a href="https://www.expedia.com/">Expedia</a></li>
+            <li> <a href="https://www.kayak.com/"> Kayak</a></li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+    <p> Weaather Dashboard</p>
+  </footer>
+</body>
+</html>
